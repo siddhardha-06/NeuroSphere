@@ -1,0 +1,3392 @@
+{
+  "reference": {
+    "iqms": {
+      "cjv": {
+        "median": 0.89911,
+        "robust_sd": 0.06781115880000008,
+        "n_train": 403
+      },
+      "cnr": {
+        "median": 1.447802,
+        "robust_sd": 0.14194857179999987,
+        "n_train": 403
+      },
+      "snr_total": {
+        "median": 8.118485,
+        "robust_sd": 0.6636295511999991,
+        "n_train": 403
+      },
+      "snrd_total": {
+        "median": 36.551301,
+        "robust_sd": 16.0463755032,
+        "n_train": 403
+      },
+      "efc": {
+        "median": 0.548419,
+        "robust_sd": 0.041177732399999945,
+        "n_train": 403
+      },
+      "wm2max": {
+        "median": 0.525076,
+        "robust_sd": 0.032424462000000084,
+        "n_train": 403
+      },
+      "inu_range": {
+        "median": 0.318268,
+        "robust_sd": 0.1331997492,
+        "n_train": 403
+      }
+    },
+    "warn_abs_z": 2.5,
+    "fail_abs_z": 3.5,
+    "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)"
+  },
+  "by_split": {
+    "train": {
+      "pass": 295,
+      "fail": 50,
+      "warn": 58
+    },
+    "val": {
+      "pass": 41,
+      "warn": 11,
+      "fail": 6
+    },
+    "test": {
+      "pass": 82,
+      "warn": 22,
+      "fail": 16
+    }
+  },
+  "fail_or_warn_subjects": {
+    "IXI035": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.3 > 2.5",
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.76,
+        "cnr": -0.53,
+        "snr_total": 3.34,
+        "snrd_total": -1.68,
+        "efc": 0.29,
+        "wm2max": -5.72,
+        "inu_range": 1.7
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI048": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.8 > 2.5",
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.84,
+        "cnr": -1.74,
+        "snr_total": 1.03,
+        "snrd_total": -0.01,
+        "efc": 1.08,
+        "wm2max": -0.48,
+        "inu_range": 2.89
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI049": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.0,
+        "cnr": -1.21,
+        "snr_total": 1.28,
+        "snrd_total": 1.36,
+        "efc": 1.01,
+        "wm2max": -1.47,
+        "inu_range": 2.96
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI056": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.42,
+        "cnr": -1.23,
+        "snr_total": 0.06,
+        "snrd_total": 0.01,
+        "efc": 0.6,
+        "wm2max": -1.1,
+        "inu_range": 3.09
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI063": {
+      "status": "warn",
+      "reasons": [
+        "efc: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.15,
+        "cnr": 0.19,
+        "snr_total": -0.3,
+        "snrd_total": -0.57,
+        "efc": 2.57,
+        "wm2max": -1.64,
+        "inu_range": 0.21
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI072": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.07,
+        "cnr": -1.38,
+        "snr_total": 0.8,
+        "snrd_total": -0.57,
+        "efc": 1.2,
+        "wm2max": 0.23,
+        "inu_range": 2.96
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI083": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.77,
+        "cnr": -0.94,
+        "snr_total": 0.62,
+        "snrd_total": 0.38,
+        "efc": 1.12,
+        "wm2max": -0.12,
+        "inu_range": 2.67
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI092": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.02,
+        "cnr": -0.48,
+        "snr_total": 1.13,
+        "snrd_total": 0.97,
+        "efc": 0.77,
+        "wm2max": -0.94,
+        "inu_range": 2.78
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI096": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.14,
+        "cnr": -1.23,
+        "snr_total": 0.93,
+        "snrd_total": 1.0,
+        "efc": 0.96,
+        "wm2max": -0.98,
+        "inu_range": 2.69
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI104": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.59,
+        "cnr": -0.07,
+        "snr_total": 0.66,
+        "snrd_total": 1.45,
+        "efc": -0.48,
+        "wm2max": 0.04,
+        "inu_range": 2.59
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI105": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.64,
+        "cnr": -0.18,
+        "snr_total": 0.94,
+        "snrd_total": 0.07,
+        "efc": 0.39,
+        "wm2max": 0.27,
+        "inu_range": 2.7
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI128": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.38,
+        "cnr": 0.04,
+        "snr_total": 0.69,
+        "snrd_total": 0.56,
+        "efc": -0.58,
+        "wm2max": 0.22,
+        "inu_range": 2.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI136": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.86,
+        "cnr": -1.08,
+        "snr_total": 0.41,
+        "snrd_total": -0.59,
+        "efc": 1.66,
+        "wm2max": -0.55,
+        "inu_range": 2.9
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI138": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.33,
+        "cnr": 1.43,
+        "snr_total": -0.13,
+        "snrd_total": 1.21,
+        "efc": -0.45,
+        "wm2max": 2.64,
+        "inu_range": -0.39
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI157": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.99,
+        "cnr": 1.24,
+        "snr_total": -1.81,
+        "snrd_total": -0.83,
+        "efc": 1.83,
+        "wm2max": 3.22,
+        "inu_range": 1.02
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI160": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.54,
+        "cnr": -0.03,
+        "snr_total": 1.01,
+        "snrd_total": 1.85,
+        "efc": -1.3,
+        "wm2max": 0.45,
+        "inu_range": 2.55
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI163": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.21,
+        "cnr": -0.59,
+        "snr_total": 0.43,
+        "snrd_total": 0.29,
+        "efc": 0.73,
+        "wm2max": -0.56,
+        "inu_range": 2.77
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI165": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.23,
+        "cnr": -0.41,
+        "snr_total": -0.15,
+        "snrd_total": 1.52,
+        "efc": 1.11,
+        "wm2max": -1.09,
+        "inu_range": 2.72
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI168": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.8,
+        "cnr": -1.15,
+        "snr_total": 0.61,
+        "snrd_total": -0.76,
+        "efc": 0.69,
+        "wm2max": -0.97,
+        "inu_range": 3.2
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI175": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.55,
+        "cnr": -1.56,
+        "snr_total": -1.05,
+        "snrd_total": -1.28,
+        "efc": 0.88,
+        "wm2max": 1.09,
+        "inu_range": 2.23
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI176": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.9,
+        "cnr": -0.58,
+        "snr_total": 1.83,
+        "snrd_total": -0.54,
+        "efc": 1.57,
+        "wm2max": -0.57,
+        "inu_range": 2.83
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI183": {
+      "status": "warn",
+      "reasons": [
+        "snrd_total: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.42,
+        "cnr": 0.62,
+        "snr_total": -0.6,
+        "snrd_total": 2.98,
+        "efc": 0.05,
+        "wm2max": -0.63,
+        "inu_range": -0.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI201": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.55,
+        "cnr": 0.09,
+        "snr_total": 0.88,
+        "snrd_total": 0.54,
+        "efc": -0.34,
+        "wm2max": 0.75,
+        "inu_range": 2.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI202": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.98,
+        "cnr": -0.55,
+        "snr_total": 0.61,
+        "snrd_total": -0.82,
+        "efc": 0.56,
+        "wm2max": 0.36,
+        "inu_range": 2.75
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI206": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.73,
+        "cnr": -0.42,
+        "snr_total": 1.92,
+        "snrd_total": -0.5,
+        "efc": -0.34,
+        "wm2max": 0.01,
+        "inu_range": 2.91
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI208": {
+      "status": "warn",
+      "reasons": [
+        "efc: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.28,
+        "cnr": 1.27,
+        "snr_total": 0.35,
+        "snrd_total": -0.64,
+        "efc": 2.68,
+        "wm2max": 0.03,
+        "inu_range": 0.25
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI211": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.85,
+        "cnr": -1.71,
+        "snr_total": 0.17,
+        "snrd_total": -0.22,
+        "efc": 1.04,
+        "wm2max": -0.6,
+        "inu_range": 2.03
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI218": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.85,
+        "cnr": -0.3,
+        "snr_total": 0.17,
+        "snrd_total": 0.35,
+        "efc": 0.41,
+        "wm2max": -0.98,
+        "inu_range": 3.02
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI227": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.13,
+        "cnr": 1.25,
+        "snr_total": -1.04,
+        "snrd_total": -0.76,
+        "efc": 0.23,
+        "wm2max": 2.57,
+        "inu_range": 0.0
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI230": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.9 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.23,
+        "cnr": -1.86,
+        "snr_total": 1.7,
+        "snrd_total": -1.82,
+        "efc": -1.16,
+        "wm2max": -4.89,
+        "inu_range": 1.33
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI231": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.4,
+        "cnr": -1.32,
+        "snr_total": 1.84,
+        "snrd_total": -1.61,
+        "efc": -0.29,
+        "wm2max": -4.83,
+        "inu_range": 2.29
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI232": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.6 > 2.5",
+        "wm2max: |z| = 5.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.67,
+        "cnr": -1.84,
+        "snr_total": 2.56,
+        "snrd_total": -1.74,
+        "efc": -0.88,
+        "wm2max": -5.51,
+        "inu_range": 2.3
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI233": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.8 > 2.5",
+        "wm2max: |z| = 4.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.75,
+        "cnr": -2.46,
+        "snr_total": 2.75,
+        "snrd_total": -1.89,
+        "efc": -0.88,
+        "wm2max": -4.65,
+        "inu_range": 1.93
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI234": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.7 > 2.5",
+        "wm2max: |z| = 6.4 > 3.5",
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.52,
+        "cnr": -1.39,
+        "snr_total": 2.72,
+        "snrd_total": -1.61,
+        "efc": -0.9,
+        "wm2max": -6.42,
+        "inu_range": 2.53
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI238": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.12,
+        "cnr": -1.03,
+        "snr_total": 2.25,
+        "snrd_total": -1.72,
+        "efc": -1.11,
+        "wm2max": -2.63,
+        "inu_range": 1.67
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI248": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.57,
+        "cnr": -0.27,
+        "snr_total": 1.24,
+        "snrd_total": 0.6,
+        "efc": -0.67,
+        "wm2max": 0.1,
+        "inu_range": 2.98
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI252": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.34,
+        "cnr": -1.53,
+        "snr_total": 0.49,
+        "snrd_total": -0.85,
+        "efc": 0.26,
+        "wm2max": 0.28,
+        "inu_range": 2.71
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI253": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.04,
+        "cnr": -0.39,
+        "snr_total": 0.0,
+        "snrd_total": 0.0,
+        "efc": -0.24,
+        "wm2max": 0.06,
+        "inu_range": 3.11
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI256": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 3.4 > 2.5",
+        "inu_range: |z| = 3.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 3.39,
+        "cnr": -1.77,
+        "snr_total": 0.67,
+        "snrd_total": 1.33,
+        "efc": 1.06,
+        "wm2max": -0.58,
+        "inu_range": 3.75
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI257": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.84,
+        "cnr": -1.2,
+        "snr_total": -0.38,
+        "snrd_total": -0.45,
+        "efc": 0.79,
+        "wm2max": 0.42,
+        "inu_range": 2.59
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI258": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.5,
+        "cnr": -0.1,
+        "snr_total": 1.0,
+        "snrd_total": -0.48,
+        "efc": -0.98,
+        "wm2max": 1.3,
+        "inu_range": 2.87
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI259": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.4 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.85,
+        "cnr": -0.44,
+        "snr_total": 0.61,
+        "snrd_total": -0.21,
+        "efc": -0.87,
+        "wm2max": 1.28,
+        "inu_range": 3.36
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI260": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.82,
+        "cnr": -0.79,
+        "snr_total": 1.32,
+        "snrd_total": -0.99,
+        "efc": 1.35,
+        "wm2max": -0.34,
+        "inu_range": 2.85
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI267": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 2.9 > 2.5",
+        "inu_range: |z| = 3.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 2.9,
+        "cnr": -1.59,
+        "snr_total": 0.06,
+        "snrd_total": 0.5,
+        "efc": 0.96,
+        "wm2max": -0.46,
+        "inu_range": 3.83
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI274": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.56,
+        "cnr": -1.06,
+        "snr_total": 0.57,
+        "snrd_total": -0.36,
+        "efc": -0.24,
+        "wm2max": -0.1,
+        "inu_range": 2.68
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI275": {
+      "status": "fail",
+      "reasons": [
+        "inu_range: |z| = 3.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.83,
+        "cnr": -0.31,
+        "snr_total": 0.85,
+        "snrd_total": 0.54,
+        "efc": 0.78,
+        "wm2max": -0.53,
+        "inu_range": 3.5
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI276": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.88,
+        "cnr": -1.26,
+        "snr_total": 0.96,
+        "snrd_total": -0.81,
+        "efc": 0.4,
+        "wm2max": -0.48,
+        "inu_range": 3.49
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI277": {
+      "status": "fail",
+      "reasons": [
+        "inu_range: |z| = 3.9 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 2.01,
+        "cnr": -1.34,
+        "snr_total": 1.22,
+        "snrd_total": -0.58,
+        "efc": 0.5,
+        "wm2max": 0.14,
+        "inu_range": 3.87
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI278": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.67,
+        "cnr": -0.11,
+        "snr_total": 0.61,
+        "snrd_total": 0.66,
+        "efc": 0.05,
+        "wm2max": 0.29,
+        "inu_range": 3.04
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI282": {
+      "status": "warn",
+      "reasons": [
+        "snrd_total: |z| = 2.6 > 2.5",
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.32,
+        "cnr": -0.01,
+        "snr_total": 1.01,
+        "snrd_total": 2.56,
+        "efc": 0.33,
+        "wm2max": -0.19,
+        "inu_range": 2.75
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI290": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.2,
+        "cnr": -1.75,
+        "snr_total": 2.12,
+        "snrd_total": -1.85,
+        "efc": -1.48,
+        "wm2max": -5.64,
+        "inu_range": 0.94
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI291": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.34,
+        "cnr": -1.81,
+        "snr_total": 1.8,
+        "snrd_total": -1.72,
+        "efc": -0.7,
+        "wm2max": -5.02,
+        "inu_range": 1.86
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI292": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.1 > 2.5",
+        "wm2max: |z| = 3.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.48,
+        "cnr": -0.68,
+        "snr_total": 3.12,
+        "snrd_total": -1.69,
+        "efc": -2.05,
+        "wm2max": -3.73,
+        "inu_range": 1.16
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI293": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.5 > 2.5",
+        "wm2max: |z| = 4.3 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.01,
+        "cnr": -0.79,
+        "snr_total": 2.54,
+        "snrd_total": -1.36,
+        "efc": -0.79,
+        "wm2max": -4.32,
+        "inu_range": 2.42
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI294": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.6 > 3.5",
+        "inu_range: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.64,
+        "cnr": -0.01,
+        "snr_total": 1.93,
+        "snrd_total": -0.15,
+        "efc": -0.99,
+        "wm2max": -5.57,
+        "inu_range": 3.08
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI295": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.15,
+        "cnr": -0.76,
+        "snr_total": 1.89,
+        "snrd_total": -0.41,
+        "efc": -0.29,
+        "wm2max": 1.28,
+        "inu_range": 2.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI302": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.27,
+        "cnr": -0.63,
+        "snr_total": 0.82,
+        "snrd_total": 1.83,
+        "efc": 0.0,
+        "wm2max": 0.1,
+        "inu_range": 2.95
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI303": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 2.6 > 2.5",
+        "wm2max: |z| = 3.5 > 3.5",
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.77,
+        "cnr": -2.57,
+        "snr_total": 2.06,
+        "snrd_total": -1.78,
+        "efc": 0.18,
+        "wm2max": -3.52,
+        "inu_range": 2.98
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI305": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.3 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.1,
+        "cnr": -1.42,
+        "snr_total": 1.32,
+        "snrd_total": -1.75,
+        "efc": -1.22,
+        "wm2max": -5.28,
+        "inu_range": 1.69
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI306": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.09,
+        "cnr": -0.37,
+        "snr_total": 1.71,
+        "snrd_total": -1.57,
+        "efc": -1.19,
+        "wm2max": -2.72,
+        "inu_range": 2.24
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI309": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 3.6 > 3.5",
+        "wm2max: |z| = 4.3 > 3.5",
+        "inu_range: |z| = 3.3 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.1,
+        "cnr": -3.6,
+        "snr_total": 0.87,
+        "snrd_total": -1.83,
+        "efc": 0.9,
+        "wm2max": -4.3,
+        "inu_range": 3.32
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI310": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.22,
+        "cnr": -1.9,
+        "snr_total": 2.38,
+        "snrd_total": -1.77,
+        "efc": -0.92,
+        "wm2max": -4.54,
+        "inu_range": 1.5
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI313": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.81,
+        "cnr": -1.26,
+        "snr_total": 1.61,
+        "snrd_total": 0.09,
+        "efc": 1.2,
+        "wm2max": 0.15,
+        "inu_range": 2.66
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI314": {
+      "status": "warn",
+      "reasons": [
+        "snr_total: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.68,
+        "cnr": -1.73,
+        "snr_total": 2.88,
+        "snrd_total": -1.75,
+        "efc": 0.23,
+        "wm2max": -0.27,
+        "inu_range": 2.3
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI315": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.1 > 2.5",
+        "wm2max: |z| = 5.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.64,
+        "cnr": -2.12,
+        "snr_total": 3.12,
+        "snrd_total": -1.82,
+        "efc": -0.84,
+        "wm2max": -5.57,
+        "inu_range": 1.4
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI316": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.06,
+        "cnr": -1.36,
+        "snr_total": 0.84,
+        "snrd_total": -0.9,
+        "efc": 0.92,
+        "wm2max": 0.68,
+        "inu_range": 3.18
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI322": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.7 > 2.5",
+        "wm2max: |z| = 6.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.37,
+        "cnr": 0.29,
+        "snr_total": 2.65,
+        "snrd_total": -1.27,
+        "efc": -0.91,
+        "wm2max": -6.04,
+        "inu_range": 1.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI327": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.45,
+        "cnr": -1.49,
+        "snr_total": -0.23,
+        "snrd_total": 0.0,
+        "efc": 0.71,
+        "wm2max": -0.09,
+        "inu_range": 2.57
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI328": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.23,
+        "cnr": -0.76,
+        "snr_total": 0.42,
+        "snrd_total": -0.59,
+        "efc": -0.6,
+        "wm2max": 0.5,
+        "inu_range": 2.72
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI329": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 2.5 > 2.5",
+        "inu_range: |z| = 3.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 2.54,
+        "cnr": -1.61,
+        "snr_total": 0.45,
+        "snrd_total": -0.89,
+        "efc": 0.63,
+        "wm2max": -0.33,
+        "inu_range": 3.61
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI331": {
+      "status": "warn",
+      "reasons": [
+        "cnr: |z| = 2.9 > 2.5",
+        "wm2max: |z| = 3.2 > 2.5",
+        "inu_range: |z| = 3.4 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.31,
+        "cnr": -2.92,
+        "snr_total": 2.22,
+        "snrd_total": -1.82,
+        "efc": 0.23,
+        "wm2max": -3.19,
+        "inu_range": 3.38
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI332": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.29,
+        "cnr": -0.7,
+        "snr_total": 2.16,
+        "snrd_total": -1.46,
+        "efc": -1.21,
+        "wm2max": -5.51,
+        "inu_range": 2.12
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI333": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.4,
+        "cnr": -2.33,
+        "snr_total": 2.13,
+        "snrd_total": -1.91,
+        "efc": 0.28,
+        "wm2max": -4.5,
+        "inu_range": 1.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI337": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.1 > 2.5",
+        "wm2max: |z| = 3.9 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.88,
+        "cnr": -1.75,
+        "snr_total": 3.1,
+        "snrd_total": -1.84,
+        "efc": -1.54,
+        "wm2max": -3.94,
+        "inu_range": 1.79
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI340": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 1.66,
+        "cnr": -0.89,
+        "snr_total": 1.11,
+        "snrd_total": -0.7,
+        "efc": 0.6,
+        "wm2max": -5.72,
+        "inu_range": 2.5
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI345": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.5 > 3.5",
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.13,
+        "cnr": -1.9,
+        "snr_total": 1.21,
+        "snrd_total": -1.81,
+        "efc": 0.89,
+        "wm2max": -5.52,
+        "inu_range": 2.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI347": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.5 > 2.5",
+        "wm2max: |z| = 4.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.35,
+        "cnr": -1.56,
+        "snr_total": 2.54,
+        "snrd_total": -1.73,
+        "efc": -0.52,
+        "wm2max": -4.68,
+        "inu_range": 2.05
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI356": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.63,
+        "cnr": -0.33,
+        "snr_total": 1.14,
+        "snrd_total": -0.07,
+        "efc": 0.35,
+        "wm2max": -0.06,
+        "inu_range": 2.68
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI363": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.82,
+        "cnr": -1.01,
+        "snr_total": 0.58,
+        "snrd_total": 0.71,
+        "efc": -0.37,
+        "wm2max": 0.38,
+        "inu_range": 2.61
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI370": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.59,
+        "cnr": 0.78,
+        "snr_total": -1.78,
+        "snrd_total": -1.44,
+        "efc": 2.44,
+        "wm2max": 2.69,
+        "inu_range": 1.25
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI371": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.1 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.54,
+        "cnr": -0.6,
+        "snr_total": 1.6,
+        "snrd_total": -1.69,
+        "efc": -1.45,
+        "wm2max": -5.11,
+        "inu_range": 1.31
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI372": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 2.5 > 2.5",
+        "snr_total: |z| = 2.8 > 2.5",
+        "wm2max: |z| = 4.3 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.24,
+        "cnr": -2.54,
+        "snr_total": 2.82,
+        "snrd_total": -1.84,
+        "efc": 0.85,
+        "wm2max": -4.35,
+        "inu_range": 2.3
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI373": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.0,
+        "cnr": -0.44,
+        "snr_total": 1.82,
+        "snrd_total": -1.5,
+        "efc": -2.14,
+        "wm2max": -4.55,
+        "inu_range": 1.02
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI378": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 3.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.68,
+        "cnr": -1.87,
+        "snr_total": 1.9,
+        "snrd_total": -1.85,
+        "efc": 0.07,
+        "wm2max": -3.56,
+        "inu_range": 1.61
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI382": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.52,
+        "cnr": -1.01,
+        "snr_total": 1.72,
+        "snrd_total": -1.4,
+        "efc": -1.09,
+        "wm2max": -5.77,
+        "inu_range": 1.6
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI387": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.97,
+        "cnr": -0.6,
+        "snr_total": 1.32,
+        "snrd_total": 0.32,
+        "efc": -0.46,
+        "wm2max": 0.38,
+        "inu_range": 2.62
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI388": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 3.0 > 2.5",
+        "wm2max: |z| = 4.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.48,
+        "cnr": -3.04,
+        "snr_total": 1.69,
+        "snrd_total": -1.8,
+        "efc": 1.48,
+        "wm2max": -3.97,
+        "inu_range": 2.39
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI394": {
+      "status": "warn",
+      "reasons": [
+        "snrd_total: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.53,
+        "cnr": 0.53,
+        "snr_total": 0.02,
+        "snrd_total": 2.82,
+        "efc": 0.63,
+        "wm2max": 0.05,
+        "inu_range": -0.64
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI395": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 6.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.68,
+        "cnr": -1.26,
+        "snr_total": 1.73,
+        "snrd_total": -1.39,
+        "efc": 1.02,
+        "wm2max": -6.38,
+        "inu_range": 1.92
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI423": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.78,
+        "cnr": -1.35,
+        "snr_total": 3.76,
+        "snrd_total": -1.74,
+        "efc": 0.18,
+        "wm2max": 0.42,
+        "inu_range": 1.92
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI424": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.0 > 2.5",
+        "wm2max: |z| = 3.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.43,
+        "cnr": -0.28,
+        "snr_total": 3.04,
+        "snrd_total": -1.75,
+        "efc": -0.38,
+        "wm2max": -3.52,
+        "inu_range": 1.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI425": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 6.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.16,
+        "cnr": -1.93,
+        "snr_total": 2.43,
+        "snrd_total": -1.8,
+        "efc": -2.0,
+        "wm2max": -6.46,
+        "inu_range": 2.06
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI426": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 3.0 > 2.5",
+        "wm2max: |z| = 3.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.05,
+        "cnr": -0.67,
+        "snr_total": 2.99,
+        "snrd_total": -1.77,
+        "efc": -0.63,
+        "wm2max": -3.75,
+        "inu_range": 0.96
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI427": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.37,
+        "cnr": -1.28,
+        "snr_total": 2.18,
+        "snrd_total": -1.43,
+        "efc": 0.94,
+        "wm2max": -3.96,
+        "inu_range": 2.05
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI430": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.2 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.3,
+        "cnr": -0.07,
+        "snr_total": 0.75,
+        "snrd_total": -1.05,
+        "efc": -0.86,
+        "wm2max": -5.18,
+        "inu_range": 1.43
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI433": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.3 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 1.03,
+        "cnr": -1.01,
+        "snr_total": 1.77,
+        "snrd_total": -1.18,
+        "efc": -0.92,
+        "wm2max": -5.27,
+        "inu_range": 1.85
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI434": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.7 > 2.5",
+        "wm2max: |z| = 4.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.07,
+        "cnr": -1.61,
+        "snr_total": 2.73,
+        "snrd_total": -1.59,
+        "efc": -1.36,
+        "wm2max": -4.72,
+        "inu_range": 2.22
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI435": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 6.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 1.41,
+        "cnr": -0.8,
+        "snr_total": 0.68,
+        "snrd_total": -1.0,
+        "efc": -0.49,
+        "wm2max": -6.61,
+        "inu_range": 1.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI436": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.12,
+        "cnr": -0.57,
+        "snr_total": 0.85,
+        "snrd_total": 1.36,
+        "efc": 0.74,
+        "wm2max": -0.32,
+        "inu_range": 3.11
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI438": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.09,
+        "cnr": -1.35,
+        "snr_total": 0.89,
+        "snrd_total": -0.38,
+        "efc": 0.65,
+        "wm2max": -0.01,
+        "inu_range": 2.75
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI441": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.47,
+        "cnr": -0.37,
+        "snr_total": 2.12,
+        "snrd_total": -0.47,
+        "efc": 0.02,
+        "wm2max": -0.19,
+        "inu_range": 2.65
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI442": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.42,
+        "cnr": -1.41,
+        "snr_total": 1.85,
+        "snrd_total": -1.64,
+        "efc": 0.56,
+        "wm2max": -4.37,
+        "inu_range": 2.09
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI443": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.09,
+        "cnr": -1.54,
+        "snr_total": -0.36,
+        "snrd_total": -1.4,
+        "efc": 2.37,
+        "wm2max": 0.52,
+        "inu_range": 2.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI453": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 3.2 > 2.5",
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 3.21,
+        "cnr": -1.83,
+        "snr_total": 0.02,
+        "snrd_total": 1.02,
+        "efc": 1.7,
+        "wm2max": -0.91,
+        "inu_range": 2.96
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI462": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.3 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.97,
+        "cnr": -1.67,
+        "snr_total": 1.58,
+        "snrd_total": -1.68,
+        "efc": -1.16,
+        "wm2max": -5.33,
+        "inu_range": 1.75
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI463": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 3.3 > 2.5",
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.45,
+        "cnr": -3.27,
+        "snr_total": 1.75,
+        "snrd_total": -1.94,
+        "efc": -0.25,
+        "wm2max": -5.71,
+        "inu_range": 1.41
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI464": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 3.4 > 2.5",
+        "wm2max: |z| = 7.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 2.35,
+        "cnr": -3.42,
+        "snr_total": 0.41,
+        "snrd_total": -1.88,
+        "efc": 0.31,
+        "wm2max": -7.54,
+        "inu_range": 1.04
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI469": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.26,
+        "cnr": -1.68,
+        "snr_total": 2.33,
+        "snrd_total": -1.75,
+        "efc": -0.02,
+        "wm2max": -3.04,
+        "inu_range": 2.41
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI470": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.31,
+        "cnr": -1.96,
+        "snr_total": 2.31,
+        "snrd_total": -1.82,
+        "efc": 1.43,
+        "wm2max": -4.39,
+        "inu_range": 1.42
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI473": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 3.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.78,
+        "cnr": -1.0,
+        "snr_total": 1.83,
+        "snrd_total": -1.22,
+        "efc": -0.31,
+        "wm2max": -3.55,
+        "inu_range": 2.37
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI474": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.7 > 2.5",
+        "wm2max: |z| = 4.6 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.02,
+        "cnr": -1.13,
+        "snr_total": 2.68,
+        "snrd_total": -1.65,
+        "efc": -1.26,
+        "wm2max": -4.55,
+        "inu_range": 1.87
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI475": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -1.34,
+        "cnr": -0.96,
+        "snr_total": 2.21,
+        "snrd_total": -1.7,
+        "efc": -0.28,
+        "wm2max": -3.24,
+        "inu_range": 1.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI476": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.08,
+        "cnr": -1.6,
+        "snr_total": 0.93,
+        "snrd_total": -1.86,
+        "efc": -0.72,
+        "wm2max": -5.7,
+        "inu_range": 1.39
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI477": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.46,
+        "cnr": 0.44,
+        "snr_total": 2.25,
+        "snrd_total": -0.76,
+        "efc": -0.82,
+        "wm2max": -5.42,
+        "inu_range": 1.47
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI478": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.79,
+        "cnr": -1.48,
+        "snr_total": 1.6,
+        "snrd_total": -1.6,
+        "efc": 0.01,
+        "wm2max": -5.65,
+        "inu_range": 2.2
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI481": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 4.2 > 3.5",
+        "cnr: |z| = 2.7 > 2.5",
+        "inu_range: |z| = 4.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 4.23,
+        "cnr": -2.73,
+        "snr_total": -0.26,
+        "snrd_total": -1.18,
+        "efc": 2.14,
+        "wm2max": -1.09,
+        "inu_range": 4.68
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI482": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.3 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.27,
+        "cnr": -1.42,
+        "snr_total": 0.29,
+        "snrd_total": -0.14,
+        "efc": 0.05,
+        "wm2max": -0.1,
+        "inu_range": 3.31
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI485": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.2,
+        "cnr": -1.26,
+        "snr_total": -0.15,
+        "snrd_total": -0.67,
+        "efc": 0.37,
+        "wm2max": 0.3,
+        "inu_range": 2.76
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI510": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 3.7 > 3.5",
+        "inu_range: |z| = 2.7 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.12,
+        "cnr": -1.12,
+        "snr_total": 1.8,
+        "snrd_total": -1.42,
+        "efc": -0.46,
+        "wm2max": -3.71,
+        "inu_range": 2.67
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI515": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.25,
+        "cnr": -0.68,
+        "snr_total": 0.37,
+        "snrd_total": -0.19,
+        "efc": 0.11,
+        "wm2max": -0.16,
+        "inu_range": 2.97
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI517": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.7 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.41,
+        "cnr": -0.8,
+        "snr_total": 1.25,
+        "snrd_total": -1.69,
+        "efc": 0.38,
+        "wm2max": -5.74,
+        "inu_range": 1.6
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI519": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.04,
+        "cnr": -0.56,
+        "snr_total": 0.66,
+        "snrd_total": 2.15,
+        "efc": 0.27,
+        "wm2max": -0.88,
+        "inu_range": 2.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI521": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.6 > 2.5",
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.61,
+        "cnr": -1.55,
+        "snr_total": 0.39,
+        "snrd_total": 2.01,
+        "efc": -0.93,
+        "wm2max": 0.85,
+        "inu_range": 2.54
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI523": {
+      "status": "warn",
+      "reasons": [
+        "snrd_total: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.43,
+        "cnr": 0.04,
+        "snr_total": -1.17,
+        "snrd_total": 2.77,
+        "efc": -1.36,
+        "wm2max": 0.42,
+        "inu_range": -0.8
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI525": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.3,
+        "cnr": -0.8,
+        "snr_total": 1.01,
+        "snrd_total": -0.46,
+        "efc": 1.23,
+        "wm2max": -0.1,
+        "inu_range": 2.77
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI526": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.4 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.96,
+        "cnr": -1.25,
+        "snr_total": 1.19,
+        "snrd_total": -0.4,
+        "efc": 0.34,
+        "wm2max": -0.1,
+        "inu_range": 3.45
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI527": {
+      "status": "warn",
+      "reasons": [
+        "efc: |z| = 2.6 > 2.5",
+        "inu_range: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.33,
+        "cnr": -1.0,
+        "snr_total": 1.35,
+        "snrd_total": -0.91,
+        "efc": 2.57,
+        "wm2max": -0.31,
+        "inu_range": 3.19
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI532": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.2 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.05,
+        "cnr": 0.35,
+        "snr_total": 1.23,
+        "snrd_total": -0.31,
+        "efc": 0.32,
+        "wm2max": -4.17,
+        "inu_range": 2.06
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI533": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.6 > 2.5",
+        "snr_total: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.63,
+        "cnr": -1.24,
+        "snr_total": -2.97,
+        "snrd_total": 0.63,
+        "efc": -0.39,
+        "wm2max": -1.01,
+        "inu_range": -0.9
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI541": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.1 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.1,
+        "cnr": -2.41,
+        "snr_total": 2.15,
+        "snrd_total": -1.75,
+        "efc": -0.97,
+        "wm2max": -5.06,
+        "inu_range": 2.34
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI542": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.48,
+        "cnr": -1.96,
+        "snr_total": 2.25,
+        "snrd_total": -1.84,
+        "efc": -1.51,
+        "wm2max": -4.04,
+        "inu_range": 2.09
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI543": {
+      "status": "fail",
+      "reasons": [
+        "cnr: |z| = 3.1 > 2.5",
+        "wm2max: |z| = 5.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.8,
+        "cnr": -3.11,
+        "snr_total": 1.77,
+        "snrd_total": -1.88,
+        "efc": 0.4,
+        "wm2max": -5.4,
+        "inu_range": 2.29
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI544": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.64,
+        "cnr": -0.9,
+        "snr_total": 0.57,
+        "snrd_total": 0.71,
+        "efc": -0.99,
+        "wm2max": 0.11,
+        "inu_range": 3.19
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI546": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.88,
+        "cnr": -0.38,
+        "snr_total": 0.31,
+        "snrd_total": 0.25,
+        "efc": -0.72,
+        "wm2max": 0.21,
+        "inu_range": 2.65
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI548": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 6.0 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.07,
+        "cnr": -1.77,
+        "snr_total": 1.84,
+        "snrd_total": -1.67,
+        "efc": -1.33,
+        "wm2max": -5.98,
+        "inu_range": 2.11
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI553": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.5 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.05,
+        "cnr": -2.29,
+        "snr_total": 1.46,
+        "snrd_total": -1.58,
+        "efc": 0.56,
+        "wm2max": -1.81,
+        "inu_range": 2.51
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI559": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.36,
+        "cnr": -0.89,
+        "snr_total": 0.29,
+        "snrd_total": -0.11,
+        "efc": -1.0,
+        "wm2max": 0.88,
+        "inu_range": 2.61
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI561": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -1.24,
+        "cnr": 0.21,
+        "snr_total": 2.26,
+        "snrd_total": -1.61,
+        "efc": -1.41,
+        "wm2max": -5.42,
+        "inu_range": 1.57
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI563": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.6 > 2.5",
+        "wm2max: |z| = 4.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.76,
+        "cnr": 0.37,
+        "snr_total": 2.6,
+        "snrd_total": -1.05,
+        "efc": -0.99,
+        "wm2max": -4.5,
+        "inu_range": 2.48
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI566": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.01,
+        "cnr": -0.66,
+        "snr_total": 1.06,
+        "snrd_total": -0.82,
+        "efc": 0.74,
+        "wm2max": 0.67,
+        "inu_range": 2.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI571": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.61,
+        "cnr": -1.16,
+        "snr_total": 2.5,
+        "snrd_total": -1.66,
+        "efc": -1.34,
+        "wm2max": -4.44,
+        "inu_range": 2.07
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI573": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.2 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.63,
+        "cnr": -1.38,
+        "snr_total": 2.4,
+        "snrd_total": -1.66,
+        "efc": -1.48,
+        "wm2max": -4.21,
+        "inu_range": 2.48
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI574": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 4.9 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 0.11,
+        "cnr": -2.4,
+        "snr_total": 1.5,
+        "snrd_total": -1.87,
+        "efc": -0.51,
+        "wm2max": -4.91,
+        "inu_range": 1.87
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI575": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.3 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.15,
+        "cnr": -1.3,
+        "snr_total": 0.26,
+        "snrd_total": -0.49,
+        "efc": 0.77,
+        "wm2max": -0.16,
+        "inu_range": 3.3
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI586": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.3 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.76,
+        "cnr": -0.89,
+        "snr_total": 1.14,
+        "snrd_total": 1.87,
+        "efc": 0.94,
+        "wm2max": -0.71,
+        "inu_range": 3.27
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI588": {
+      "status": "warn",
+      "reasons": [
+        "wm2max: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": -0.37,
+        "cnr": -1.15,
+        "snr_total": 1.93,
+        "snrd_total": -1.68,
+        "efc": 0.23,
+        "wm2max": -3.14,
+        "inu_range": 2.4
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI595": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 3.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.32,
+        "cnr": -1.17,
+        "snr_total": 2.36,
+        "snrd_total": -1.67,
+        "efc": -1.15,
+        "wm2max": -3.82,
+        "inu_range": 1.22
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI596": {
+      "status": "fail",
+      "reasons": [
+        "snr_total: |z| = 2.5 > 2.5",
+        "wm2max: |z| = 5.4 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.87,
+        "cnr": -1.87,
+        "snr_total": 2.51,
+        "snrd_total": -1.74,
+        "efc": 0.14,
+        "wm2max": -5.42,
+        "inu_range": 2.42
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI597": {
+      "status": "fail",
+      "reasons": [
+        "wm2max: |z| = 5.2 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": -0.5,
+        "cnr": -1.58,
+        "snr_total": 2.04,
+        "snrd_total": -1.75,
+        "efc": -1.46,
+        "wm2max": -5.24,
+        "inu_range": 1.36
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI598": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.4 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.54,
+        "cnr": -1.07,
+        "snr_total": 0.86,
+        "snrd_total": -0.61,
+        "efc": 1.01,
+        "wm2max": 0.26,
+        "inu_range": 3.4
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI599": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.01,
+        "cnr": -0.54,
+        "snr_total": 1.09,
+        "snrd_total": 0.53,
+        "efc": 1.65,
+        "wm2max": 0.49,
+        "inu_range": 2.56
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI600": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.3 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.22,
+        "cnr": -0.53,
+        "snr_total": 0.23,
+        "snrd_total": 0.11,
+        "efc": 0.85,
+        "wm2max": -0.81,
+        "inu_range": 3.29
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI601": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.61,
+        "cnr": -0.08,
+        "snr_total": 0.53,
+        "snrd_total": 1.48,
+        "efc": 0.1,
+        "wm2max": -0.84,
+        "inu_range": 3.19
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI608": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.74,
+        "cnr": -1.11,
+        "snr_total": 0.78,
+        "snrd_total": 1.62,
+        "efc": 1.06,
+        "wm2max": -0.89,
+        "inu_range": 2.86
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI609": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.0 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.3,
+        "cnr": -0.57,
+        "snr_total": -0.33,
+        "snrd_total": 1.66,
+        "efc": -0.33,
+        "wm2max": -0.47,
+        "inu_range": 2.99
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI612": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 2.9 > 2.5",
+        "inu_range: |z| = 3.4 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 2.85,
+        "cnr": -1.57,
+        "snr_total": -0.11,
+        "snrd_total": -0.32,
+        "efc": 0.68,
+        "wm2max": -0.62,
+        "inu_range": 3.38
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI613": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.6 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 0.06,
+        "cnr": 0.31,
+        "snr_total": 0.37,
+        "snrd_total": 1.73,
+        "efc": 1.1,
+        "wm2max": 0.18,
+        "inu_range": 2.6
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI630": {
+      "status": "warn",
+      "reasons": [
+        "cjv: |z| = 3.2 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 3.18,
+        "cnr": -1.53,
+        "snr_total": -2.4,
+        "snrd_total": 1.74,
+        "efc": -0.74,
+        "wm2max": -1.09,
+        "inu_range": 0.03
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI631": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.8 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.5,
+        "cnr": -0.89,
+        "snr_total": 0.66,
+        "snrd_total": -0.57,
+        "efc": 0.61,
+        "wm2max": -0.19,
+        "inu_range": 2.79
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI632": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 3.1 > 2.5",
+        "inu_range: |z| = 3.8 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 3.05,
+        "cnr": -1.81,
+        "snr_total": -0.33,
+        "snrd_total": -0.53,
+        "efc": 0.94,
+        "wm2max": -0.73,
+        "inu_range": 3.81
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI634": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 3.1 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.84,
+        "cnr": -0.95,
+        "snr_total": -0.01,
+        "snrd_total": 0.59,
+        "efc": 0.51,
+        "wm2max": -0.26,
+        "inu_range": 3.13
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI635": {
+      "status": "warn",
+      "reasons": [
+        "inu_range: |z| = 2.9 > 2.5"
+      ],
+      "robust_z": {
+        "cjv": 1.19,
+        "cnr": -0.53,
+        "snr_total": 0.67,
+        "snrd_total": 0.58,
+        "efc": 0.62,
+        "wm2max": -0.62,
+        "inu_range": 2.93
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    },
+    "IXI636": {
+      "status": "fail",
+      "reasons": [
+        "cjv: |z| = 2.5 > 2.5",
+        "inu_range: |z| = 3.5 > 3.5"
+      ],
+      "robust_z": {
+        "cjv": 2.52,
+        "cnr": -1.71,
+        "snr_total": 0.68,
+        "snrd_total": -1.07,
+        "efc": 1.55,
+        "wm2max": -0.6,
+        "inu_range": 3.52
+      },
+      "reference": "IXI train split (data/splits/ixi_final.csv), robust z = (x - median) / (1.4826 MAD)",
+      "thresholds": {
+        "warn_abs_z": 2.5,
+        "fail_abs_z": 3.5
+      }
+    }
+  },
+  "provenance": {
+    "pipeline_version": "2.0.0.dev1",
+    "git_commit": {
+      "sha": "51a7c091c61618edb64b63b82f0ee9b6af065c71",
+      "dirty": false
+    },
+    "timestamp_utc": "2026-10-23T01:54:32+00:00",
+    "command": "scripts\\build_json_all.py --pipeline-dir work/pipeline_ft",
+    "software": {
+      "python": "3.12.6",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "scipy": "1.15.3",
+      "nibabel": "5.4.2",
+      "torch": "2.6.0+cu124",
+      "antspyx": "0.6.3",
+      "scikit-learn": "1.9.0",
+      "scikit-image": "0.26.0",
+      "pandas": "3.0.3",
+      "pingouin": "0.7.0"
+    },
+    "data_subset": "581 subjects"
+  }
+}

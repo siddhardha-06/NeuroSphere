@@ -1,0 +1,35 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset and masks
+ixi-t1/
+*.nii
+*.nii.gz
+*.zip
+*.tar.gz
+
+
+# Model checkpoints and outputs
+checkpoints/
+
+# never commit data, weights, caches or secrets
+IXI_data/
+work/
+data/raw/
+data/*.xls
+data/*.xlsx
+*.pkl
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.mgz
+*.npy
+*.npz
+**/fastsurfer_output/
+.env
+~$*
+
+# third-party tokenizer files (re-downloadable)
+data/tokenizers/

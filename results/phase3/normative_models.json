@@ -1,0 +1,312 @@
+{
+  "reference": "IXI train split, n=344, OLS (age, age^2, sex, site, eTIV), 5-fold cross-fitted for train subjects",
+  "age_mean_centre": 49.48230755813954,
+  "models": {
+    "left_cerebral_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 9.722455527173203
+    },
+    "left_cerebral_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 7.741210481479881
+    },
+    "left_lateral_ventricle": {
+      "n_train": 344,
+      "residual_sd_all_train": 4.349687828925748
+    },
+    "left_cerebellum_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 1.3085093879457876
+    },
+    "left_cerebellum_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 3.6555143939043364
+    },
+    "left_thalamus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.4900362652655748
+    },
+    "left_caudate": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.3002851445538554
+    },
+    "left_putamen": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.33206135752269766
+    },
+    "left_pallidum": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.12943158500545926
+    },
+    "third_ventricle": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.3128287638190322
+    },
+    "fourth_ventricle": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.4282650675765118
+    },
+    "brain_stem": {
+      "n_train": 344,
+      "residual_sd_all_train": 1.5850127687190834
+    },
+    "left_hippocampus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.2961691078221219
+    },
+    "left_amygdala": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.12257894463390442
+    },
+    "left_accumbens": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.04559828621350586
+    },
+    "left_ventral_dc": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.2399011140045776
+    },
+    "right_cerebral_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 9.702793534302252
+    },
+    "right_cerebral_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 8.482178306244176
+    },
+    "right_lateral_ventricle": {
+      "n_train": 344,
+      "residual_sd_all_train": 4.232881991955672
+    },
+    "right_cerebellum_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 1.2716094240590863
+    },
+    "right_cerebellum_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 3.731324792478608
+    },
+    "right_thalamus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.3901993356244439
+    },
+    "right_caudate": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.29366403120115225
+    },
+    "right_putamen": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.31296280953438316
+    },
+    "right_pallidum": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.1394843823652033
+    },
+    "right_hippocampus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.30378842796320205
+    },
+    "right_amygdala": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.12741413268143878
+    },
+    "right_accumbens": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.06074277549845184
+    },
+    "right_ventral_dc": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.2297845056571809
+    },
+    "total_cerebral_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 19.21534216929094
+    },
+    "total_cerebral_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 16.070609642039727
+    },
+    "total_lateral_ventricle": {
+      "n_train": 344,
+      "residual_sd_all_train": 8.2387461838893
+    },
+    "total_cerebellum_white_matter": {
+      "n_train": 344,
+      "residual_sd_all_train": 2.539710079144598
+    },
+    "total_cerebellum_cortex": {
+      "n_train": 344,
+      "residual_sd_all_train": 7.2709387374346
+    },
+    "total_thalamus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.8482048100570301
+    },
+    "total_caudate": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.5741638104944757
+    },
+    "total_putamen": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.6304513524660618
+    },
+    "total_pallidum": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.26127377277602754
+    },
+    "total_hippocampus": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.563881279672569
+    },
+    "total_amygdala": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.2268841297894277
+    },
+    "total_accumbens": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.09758157506326383
+    },
+    "total_ventral_dc": {
+      "n_train": 344,
+      "residual_sd_all_train": 0.4581807493084746
+    },
+    "gray_matter_ml": {
+      "n_train": 344,
+      "residual_sd_all_train": 17.5660203014617
+    },
+    "white_matter_ml": {
+      "n_train": 344,
+      "residual_sd_all_train": 20.061908337479885
+    },
+    "ventricular_csf_ml": {
+      "n_train": 344,
+      "residual_sd_all_train": 8.522900077896962
+    },
+    "brain_parenchyma_ml": {
+      "n_train": 344,
+      "residual_sd_all_train": 33.18592047471678
+    }
+  },
+  "features": [
+    "left_cerebral_white_matter",
+    "left_cerebral_cortex",
+    "left_lateral_ventricle",
+    "left_cerebellum_white_matter",
+    "left_cerebellum_cortex",
+    "left_thalamus",
+    "left_caudate",
+    "left_putamen",
+    "left_pallidum",
+    "third_ventricle",
+    "fourth_ventricle",
+    "brain_stem",
+    "left_hippocampus",
+    "left_amygdala",
+    "left_accumbens",
+    "left_ventral_dc",
+    "right_cerebral_white_matter",
+    "right_cerebral_cortex",
+    "right_lateral_ventricle",
+    "right_cerebellum_white_matter",
+    "right_cerebellum_cortex",
+    "right_thalamus",
+    "right_caudate",
+    "right_putamen",
+    "right_pallidum",
+    "right_hippocampus",
+    "right_amygdala",
+    "right_accumbens",
+    "right_ventral_dc",
+    "total_cerebral_white_matter",
+    "total_cerebral_cortex",
+    "total_lateral_ventricle",
+    "total_cerebellum_white_matter",
+    "total_cerebellum_cortex",
+    "total_thalamus",
+    "total_caudate",
+    "total_putamen",
+    "total_pallidum",
+    "total_hippocampus",
+    "total_amygdala",
+    "total_accumbens",
+    "total_ventral_dc",
+    "gray_matter_ml",
+    "white_matter_ml",
+    "ventricular_csf_ml",
+    "brain_parenchyma_ml"
+  ],
+  "excluded_gate_fail_train": [
+    "IXI035",
+    "IXI230",
+    "IXI231",
+    "IXI232",
+    "IXI233",
+    "IXI267",
+    "IXI275",
+    "IXI277",
+    "IXI290",
+    "IXI291",
+    "IXI292",
+    "IXI293",
+    "IXI294",
+    "IXI303",
+    "IXI305",
+    "IXI309",
+    "IXI310",
+    "IXI315",
+    "IXI322",
+    "IXI332",
+    "IXI337",
+    "IXI340",
+    "IXI347",
+    "IXI371",
+    "IXI372",
+    "IXI373",
+    "IXI378",
+    "IXI382",
+    "IXI388",
+    "IXI395",
+    "IXI424",
+    "IXI430",
+    "IXI434",
+    "IXI435",
+    "IXI462",
+    "IXI463",
+    "IXI464",
+    "IXI473",
+    "IXI474",
+    "IXI477",
+    "IXI478",
+    "IXI510",
+    "IXI517",
+    "IXI541",
+    "IXI542",
+    "IXI563",
+    "IXI595",
+    "IXI596",
+    "IXI597",
+    "IXI636"
+  ],
+  "provenance": {
+    "pipeline_version": "2.0.0.dev1",
+    "git_commit": {
+      "sha": "51a7c091c61618edb64b63b82f0ee9b6af065c71",
+      "dirty": false
+    },
+    "timestamp_utc": "2026-10-23T01:54:32+00:00",
+    "command": "scripts\\build_json_all.py --pipeline-dir work/pipeline_ft",
+    "software": {
+      "python": "3.12.6",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "scipy": "1.15.3",
+      "nibabel": "5.4.2",
+      "torch": "2.6.0+cu124",
+      "antspyx": "0.6.3",
+      "scikit-learn": "1.9.0",
+      "scikit-image": "0.26.0",
+      "pandas": "3.0.3",
+      "pingouin": "0.7.0"
+    }
+  }
+}

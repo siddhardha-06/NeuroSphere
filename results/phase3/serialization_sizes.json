@@ -1,0 +1,147 @@
+{
+  "tokenizer": "Qwen2.5 (data/tokenizers/qwen2.5_tokenizer.json)",
+  "profiles": {
+    "full": {
+      "bytes_median": 14645.0,
+      "bytes_iqr": [
+        14612.0,
+        14718.0
+      ],
+      "tokens_median": 6544.0,
+      "tokens_iqr": [
+        6531.0,
+        6569.0
+      ],
+      "n": 581
+    },
+    "compact": {
+      "bytes_median": 3307.0,
+      "bytes_iqr": [
+        3299.0,
+        3314.0
+      ],
+      "tokens_median": 2215.0,
+      "tokens_iqr": [
+        2210.0,
+        2221.0
+      ],
+      "n": 581
+    },
+    "csv": {
+      "bytes_median": 2375.0,
+      "bytes_iqr": [
+        2368.0,
+        2381.0
+      ],
+      "tokens_median": 2126.0,
+      "tokens_iqr": [
+        2121.0,
+        2131.0
+      ],
+      "n": 581
+    },
+    "text": {
+      "bytes_median": 13374.0,
+      "bytes_iqr": [
+        13366.0,
+        13383.0
+      ],
+      "tokens_median": 4970.0,
+      "tokens_iqr": [
+        4964.0,
+        4977.0
+      ],
+      "n": 581
+    },
+    "obfuscated": {
+      "bytes_median": 2820.0,
+      "bytes_iqr": [
+        2812.0,
+        2827.0
+      ],
+      "tokens_median": 2345.0,
+      "tokens_iqr": [
+        2340.0,
+        2352.0
+      ],
+      "n": 581
+    }
+  },
+  "profiles_without_normative": {
+    "compact": {
+      "bytes_median": 1972.0,
+      "bytes_iqr": [
+        1969.0,
+        1978.0
+      ],
+      "tokens_median": 1366.0,
+      "tokens_iqr": [
+        1362.0,
+        1370.0
+      ],
+      "n": 581
+    },
+    "csv": {
+      "bytes_median": 1439.0,
+      "bytes_iqr": [
+        1436.0,
+        1443.0
+      ],
+      "tokens_median": 1307.0,
+      "tokens_iqr": [
+        1303.0,
+        1311.0
+      ],
+      "n": 581
+    },
+    "text": {
+      "bytes_median": 6607.0,
+      "bytes_iqr": [
+        6604.0,
+        6613.0
+      ],
+      "tokens_median": 2648.0,
+      "tokens_iqr": [
+        2644.0,
+        2653.0
+      ],
+      "n": 581
+    },
+    "obfuscated": {
+      "bytes_median": 1699.0,
+      "bytes_iqr": [
+        1696.0,
+        1705.0
+      ],
+      "tokens_median": 1434.0,
+      "tokens_iqr": [
+        1430.0,
+        1439.0
+      ],
+      "n": 581
+    }
+  },
+  "raw_nifti_bytes_median": 19661152.0,
+  "provenance": {
+    "pipeline_version": "2.0.0.dev1",
+    "git_commit": {
+      "sha": "51a7c091c61618edb64b63b82f0ee9b6af065c71",
+      "dirty": false
+    },
+    "timestamp_utc": "2026-10-23T01:54:32+00:00",
+    "command": "scripts\\build_json_all.py --pipeline-dir work/pipeline_ft",
+    "software": {
+      "python": "3.12.6",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "scipy": "1.15.3",
+      "nibabel": "5.4.2",
+      "torch": "2.6.0+cu124",
+      "antspyx": "0.6.3",
+      "scikit-learn": "1.9.0",
+      "scikit-image": "0.26.0",
+      "pandas": "3.0.3",
+      "pingouin": "0.7.0"
+    }
+  }
+}

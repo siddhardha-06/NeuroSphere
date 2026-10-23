@@ -1,0 +1,217 @@
+{
+  "rule": "Apply the fine-tuning acceptance rule (\"Fine-tuning plan and acceptance rule\",\ncommitted 87b3319 before training). Val only.\n\nAdopt the fine-tuned model only if, on Val (E2-FS, raw scans, native space), all hold:\n  1. a checkpoint passed the min-class rule (every class Val Dice >= 0.5 at the saved epoch);\n  2. mean raw-scan Dice >= 0.8622 - 0.01 = 0.8522 (0.8622 = v2, results/e2_fs/v2_val);\n  3. fewer than 23 structures with |volume bias| > 5 % (23 = v2);\n  4. |bias| decreases for each of L/R accumbens, pallidum, putamen.\nOtherwise keep v2 and report the bias as a limitation. The v2 numbers in 2-4 are the pre-registered ones (v2_val).",
+  "checkpoint": {
+    "file": "unet3d_ft_best.pth",
+    "epoch_index": 14,
+    "recipe": {
+      "flip_mode": "swap",
+      "shift_vox": 5.0,
+      "intensity_aug": true,
+      "ce_class_weights": false,
+      "min_class_dice": 0.5,
+      "seed": 0,
+      "lr": 3e-05,
+      "epochs": 15,
+      "data_dir": "work\\finetune_data",
+      "init_ckpt": "unet3d_v2_best.pth"
+    },
+    "ft_e2fs_checkpoint": {
+      "file": "unet3d_ft_best.pth",
+      "sha256": "578a1d68328d5231fa0551b7fc385ea4232af335391a42327a29a06be9a65b05",
+      "epoch_index": 14
+    }
+  },
+  "c1_min_class": {
+    "met": true,
+    "saved_epoch_min_class_dice": 0.7596206696364463,
+    "worst_label": 26
+  },
+  "c2_dice": {
+    "met": true,
+    "ft": 0.8770655917440693,
+    "ft_ci95": [
+      0.8735158209032065,
+      0.8802096337464901
+    ],
+    "threshold": 0.8522,
+    "v2": 0.8621978637882892
+  },
+  "c3_n_structures_over_5pct": {
+    "met": true,
+    "ft": 4,
+    "v2": 23
+  },
+  "c4_key_structures": {
+    "met": true,
+    "per_structure": {
+      "left_accumbens": {
+        "v2": 56.44,
+        "ft": 21.71,
+        "reduced": true
+      },
+      "right_accumbens": {
+        "v2": 22.27,
+        "ft": 8.03,
+        "reduced": true
+      },
+      "left_pallidum": {
+        "v2": 19.6,
+        "ft": 3.22,
+        "reduced": true
+      },
+      "right_pallidum": {
+        "v2": 19.15,
+        "ft": 3.71,
+        "reduced": true
+      },
+      "left_putamen": {
+        "v2": 20.29,
+        "ft": 2.94,
+        "reduced": true
+      },
+      "right_putamen": {
+        "v2": 19.46,
+        "ft": 1.82,
+        "reduced": true
+      }
+    }
+  },
+  "decision": "adopt_finetuned",
+  "mean_abs_bias_pct": {
+    "ft": 3.1997873472931646,
+    "v2": 11.979368425611673
+  },
+  "bias_pct_ft": {
+    "left_cerebral_white_matter": -0.65,
+    "left_cerebral_cortex": -0.23,
+    "left_lateral_ventricle": 3.83,
+    "left_cerebellum_white_matter": -2.13,
+    "left_cerebellum_cortex": 2.07,
+    "left_thalamus": 0.45,
+    "left_caudate": 2.67,
+    "left_putamen": 2.94,
+    "left_pallidum": 3.22,
+    "third_ventricle": 6.81,
+    "fourth_ventricle": 6.73,
+    "brain_stem": 0.39,
+    "left_hippocampus": 1.86,
+    "left_amygdala": 4.51,
+    "left_accumbens": 21.71,
+    "left_ventral_dc": 2.6,
+    "right_cerebral_white_matter": -0.18,
+    "right_cerebral_cortex": -0.08,
+    "right_lateral_ventricle": 3.81,
+    "right_cerebellum_white_matter": -2.23,
+    "right_cerebellum_cortex": 0.87,
+    "right_thalamus": 1.01,
+    "right_caudate": 0.68,
+    "right_putamen": 1.82,
+    "right_pallidum": 3.71,
+    "right_hippocampus": 2.05,
+    "right_amygdala": 4.01,
+    "right_accumbens": 8.03,
+    "right_ventral_dc": 1.53
+  },
+  "bias_pct_v2": {
+    "left_cerebral_white_matter": -5.82,
+    "left_cerebral_cortex": 6.31,
+    "left_lateral_ventricle": 15.1,
+    "left_cerebellum_white_matter": -0.47,
+    "left_cerebellum_cortex": 5.15,
+    "left_thalamus": 4.56,
+    "left_caudate": 16.8,
+    "left_putamen": 20.29,
+    "left_pallidum": 19.6,
+    "third_ventricle": 10.79,
+    "fourth_ventricle": 14.16,
+    "brain_stem": 2.66,
+    "left_hippocampus": 8.46,
+    "left_amygdala": 12.05,
+    "left_accumbens": 56.44,
+    "left_ventral_dc": 5.55,
+    "right_cerebral_white_matter": -3.62,
+    "right_cerebral_cortex": 5.41,
+    "right_lateral_ventricle": 12.67,
+    "right_cerebellum_white_matter": -2.24,
+    "right_cerebellum_cortex": 5.04,
+    "right_thalamus": 3.84,
+    "right_caudate": 16.41,
+    "right_putamen": 19.46,
+    "right_pallidum": 19.15,
+    "right_hippocampus": 8.79,
+    "right_amygdala": 15.93,
+    "right_accumbens": 22.27,
+    "right_ventral_dc": 8.36
+  },
+  "diagnostic_v2_reseg_uint8": {
+    "dice": 0.862207141905517,
+    "n_over": 23,
+    "mean_abs_bias": 11.974675007982068,
+    "key_bias": {
+      "left_accumbens": 56.36,
+      "right_accumbens": 22.23,
+      "left_pallidum": 19.59,
+      "right_pallidum": 19.13,
+      "left_putamen": 20.31,
+      "right_putamen": 19.45
+    }
+  },
+  "diagnostic_in_domain_val_ft": {
+    "dice": 0.8689036224455495,
+    "bias_pct": {
+      "left_cerebral_white_matter": 3.11,
+      "left_cerebral_cortex": 2.36,
+      "left_lateral_ventricle": 1.34,
+      "left_cerebellum_white_matter": 9.62,
+      "left_cerebellum_cortex": 2.14,
+      "left_thalamus": 1.67,
+      "left_caudate": -7.59,
+      "left_putamen": -11.03,
+      "left_pallidum": -2.07,
+      "third_ventricle": 9.31,
+      "fourth_ventricle": 7.04,
+      "brain_stem": 2.87,
+      "left_hippocampus": 4.09,
+      "left_amygdala": 2.34,
+      "left_accumbens": 3.14,
+      "left_ventral_dc": 4.81,
+      "right_cerebral_white_matter": 2.24,
+      "right_cerebral_cortex": 3.38,
+      "right_lateral_ventricle": 2.89,
+      "right_cerebellum_white_matter": 9.12,
+      "right_cerebellum_cortex": 1.42,
+      "right_thalamus": 4.66,
+      "right_caudate": -6.63,
+      "right_putamen": -12.44,
+      "right_pallidum": 1.9,
+      "right_hippocampus": 4.72,
+      "right_amygdala": 4.05,
+      "right_accumbens": 0.76,
+      "right_ventral_dc": 4.07
+    },
+    "n_over": 8,
+    "mean_abs_bias": 4.579655172413793
+  },
+  "provenance": {
+    "pipeline_version": "2.0.0.dev1",
+    "git_commit": {
+      "sha": "ed9ad53d2d1933d4f2abe58d19fbeb9da09406b2",
+      "dirty": false
+    },
+    "timestamp_utc": "2026-10-22T20:44:03+00:00",
+    "command": "experiments/finetune_acceptance.py --ft results/e2_fs/ft_val --v2 results/e2_fs/v2_val --v2-reseg results/e2_fs/v2_reseg_val --e1-ft results/e1_unet_in_domain/unet3d_ft_best_val",
+    "software": {
+      "python": "3.12.6",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "scipy": "1.15.3",
+      "nibabel": "5.4.2",
+      "torch": "2.6.0+cu124",
+      "antspyx": "0.6.3",
+      "scikit-learn": "1.9.0",
+      "scikit-image": "0.26.0",
+      "pandas": "3.0.3",
+      "pingouin": "0.7.0"
+    }
+  }
+}

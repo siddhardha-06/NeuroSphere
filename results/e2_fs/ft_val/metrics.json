@@ -1,0 +1,338 @@
+{
+  "split": "Val",
+  "n_subjects": 58,
+  "checkpoint": {
+    "file": "unet3d_ft_best.pth",
+    "sha256": "578a1d68328d5231fa0551b7fc385ea4232af335391a42327a29a06be9a65b05",
+    "epoch_index": 14
+  },
+  "labels_dir": "work\\pipeline_ft",
+  "mean_fg_dice_over_subjects": 0.8770655917440693,
+  "mean_fg_dice_ci95": [
+    0.8735158209032065,
+    0.8802096337464901
+  ],
+  "per_subject_mean_fg_dice_sd": 0.01312397365502072,
+  "transfer_ncc": {
+    "median": 0.9360999999999999,
+    "min": 0.7899
+  },
+  "mapping_unconfirmed_subjects": [],
+  "max_abs_structure_bias_pct": 21.71185801968055,
+  "per_structure": {
+    "left_cerebral_white_matter": {
+      "label": 2,
+      "mean_bias_pct": -0.6473996724884072,
+      "bias_pct_ci95": [
+        -1.545838834266455,
+        0.22909546704646616
+      ],
+      "dice_mean": 0.8978984158537009,
+      "n": 58
+    },
+    "left_cerebral_cortex": {
+      "label": 3,
+      "mean_bias_pct": -0.22637581636821186,
+      "bias_pct_ci95": [
+        -0.9996873487533867,
+        0.5894989102568826
+      ],
+      "dice_mean": 0.8655012980407905,
+      "n": 58
+    },
+    "left_lateral_ventricle": {
+      "label": 4,
+      "mean_bias_pct": 3.8293858124312736,
+      "bias_pct_ci95": [
+        2.7539940764124244,
+        5.013382764233792
+      ],
+      "dice_mean": 0.8953162503128852,
+      "n": 58
+    },
+    "left_cerebellum_white_matter": {
+      "label": 7,
+      "mean_bias_pct": -2.1282776118676674,
+      "bias_pct_ci95": [
+        -5.953795012502736,
+        1.6189784203237316
+      ],
+      "dice_mean": 0.8627602869179508,
+      "n": 58
+    },
+    "left_cerebellum_cortex": {
+      "label": 8,
+      "mean_bias_pct": 2.0661482065203587,
+      "bias_pct_ci95": [
+        0.5526196094522144,
+        3.6493280492508724
+      ],
+      "dice_mean": 0.9172925989754767,
+      "n": 58
+    },
+    "left_thalamus": {
+      "label": 10,
+      "mean_bias_pct": 0.44892909746672854,
+      "bias_pct_ci95": [
+        -0.7024178030741456,
+        1.6345110496346291
+      ],
+      "dice_mean": 0.9228615647259788,
+      "n": 58
+    },
+    "left_caudate": {
+      "label": 11,
+      "mean_bias_pct": 2.6722503505016193,
+      "bias_pct_ci95": [
+        1.3294410624947657,
+        3.9156366809634937
+      ],
+      "dice_mean": 0.8844699299170535,
+      "n": 58
+    },
+    "left_putamen": {
+      "label": 12,
+      "mean_bias_pct": 2.941502955381957,
+      "bias_pct_ci95": [
+        1.2909198966028548,
+        4.8713956298811585
+      ],
+      "dice_mean": 0.8875621242996498,
+      "n": 58
+    },
+    "left_pallidum": {
+      "label": 13,
+      "mean_bias_pct": 3.223684688367076,
+      "bias_pct_ci95": [
+        0.7375557103713811,
+        5.636032335402412
+      ],
+      "dice_mean": 0.8544880497250067,
+      "n": 58
+    },
+    "third_ventricle": {
+      "label": 14,
+      "mean_bias_pct": 6.8108942616493575,
+      "bias_pct_ci95": [
+        4.201052212843793,
+        9.61811543715024
+      ],
+      "dice_mean": 0.8316147135260545,
+      "n": 58
+    },
+    "fourth_ventricle": {
+      "label": 15,
+      "mean_bias_pct": 6.730255913123231,
+      "bias_pct_ci95": [
+        4.759584327811505,
+        8.886546790057507
+      ],
+      "dice_mean": 0.8511704533991243,
+      "n": 58
+    },
+    "brain_stem": {
+      "label": 16,
+      "mean_bias_pct": 0.392865764380565,
+      "bias_pct_ci95": [
+        -0.3529487899979032,
+        1.0920969574777362
+      ],
+      "dice_mean": 0.9371621518390005,
+      "n": 58
+    },
+    "left_hippocampus": {
+      "label": 17,
+      "mean_bias_pct": 1.856021962908999,
+      "bias_pct_ci95": [
+        0.8452487134830893,
+        2.9445461682861622
+      ],
+      "dice_mean": 0.8839253438525558,
+      "n": 58
+    },
+    "left_amygdala": {
+      "label": 18,
+      "mean_bias_pct": 4.508157598028166,
+      "bias_pct_ci95": [
+        2.3826696683769963,
+        6.813003149483538
+      ],
+      "dice_mean": 0.8586194370841889,
+      "n": 58
+    },
+    "left_accumbens": {
+      "label": 26,
+      "mean_bias_pct": 21.71185801968055,
+      "bias_pct_ci95": [
+        16.210985336550166,
+        27.458449699789547
+      ],
+      "dice_mean": 0.7539247964138645,
+      "n": 58
+    },
+    "left_ventral_dc": {
+      "label": 28,
+      "mean_bias_pct": 2.6034235796260714,
+      "bias_pct_ci95": [
+        1.4238752114332207,
+        3.944098863245269
+      ],
+      "dice_mean": 0.8809461950619413,
+      "n": 58
+    },
+    "right_cerebral_white_matter": {
+      "label": 41,
+      "mean_bias_pct": -0.17806086305428467,
+      "bias_pct_ci95": [
+        -1.0420550814694531,
+        0.6489075288001097
+      ],
+      "dice_mean": 0.898312643199801,
+      "n": 58
+    },
+    "right_cerebral_cortex": {
+      "label": 42,
+      "mean_bias_pct": -0.07591903952795039,
+      "bias_pct_ci95": [
+        -0.9016387108069253,
+        0.7926791637910202
+      ],
+      "dice_mean": 0.8653111477494158,
+      "n": 58
+    },
+    "right_lateral_ventricle": {
+      "label": 43,
+      "mean_bias_pct": 3.8078923900002364,
+      "bias_pct_ci95": [
+        3.0013049706968316,
+        4.689064984140628
+      ],
+      "dice_mean": 0.8952191359986995,
+      "n": 58
+    },
+    "right_cerebellum_white_matter": {
+      "label": 46,
+      "mean_bias_pct": -2.2326363942872596,
+      "bias_pct_ci95": [
+        -6.096159258986701,
+        1.5256756218045815
+      ],
+      "dice_mean": 0.8612970388389868,
+      "n": 58
+    },
+    "right_cerebellum_cortex": {
+      "label": 47,
+      "mean_bias_pct": 0.8655914393786897,
+      "bias_pct_ci95": [
+        -0.32652481430741104,
+        2.037302869332333
+      ],
+      "dice_mean": 0.9193715172569801,
+      "n": 58
+    },
+    "right_thalamus": {
+      "label": 49,
+      "mean_bias_pct": 1.0069981557967214,
+      "bias_pct_ci95": [
+        -0.07214880745671351,
+        1.9915969273162777
+      ],
+      "dice_mean": 0.922860506357033,
+      "n": 58
+    },
+    "right_caudate": {
+      "label": 50,
+      "mean_bias_pct": 0.6785721370824687,
+      "bias_pct_ci95": [
+        -0.6033042039163583,
+        2.0513073659147154
+      ],
+      "dice_mean": 0.8839766299808657,
+      "n": 58
+    },
+    "right_putamen": {
+      "label": 51,
+      "mean_bias_pct": 1.824713445104617,
+      "bias_pct_ci95": [
+        0.07041775996810289,
+        3.9484705774382833
+      ],
+      "dice_mean": 0.88670462655532,
+      "n": 58
+    },
+    "right_pallidum": {
+      "label": 52,
+      "mean_bias_pct": 3.7148172288394985,
+      "bias_pct_ci95": [
+        1.5470996790409524,
+        6.00408609459596
+      ],
+      "dice_mean": 0.8602116951502622,
+      "n": 58
+    },
+    "right_hippocampus": {
+      "label": 53,
+      "mean_bias_pct": 2.046041557885727,
+      "bias_pct_ci95": [
+        0.879682487397899,
+        3.319876643283684
+      ],
+      "dice_mean": 0.8874182066174545,
+      "n": 58
+    },
+    "right_amygdala": {
+      "label": 54,
+      "mean_bias_pct": 4.006591027255973,
+      "bias_pct_ci95": [
+        2.361595148574285,
+        5.574617355812727
+      ],
+      "dice_mean": 0.8807375279487129,
+      "n": 58
+    },
+    "right_accumbens": {
+      "label": 58,
+      "mean_bias_pct": 8.027941352115485,
+      "bias_pct_ci95": [
+        5.424090390961267,
+        10.657728237966285
+      ],
+      "dice_mean": 0.8054916515075292,
+      "n": 58
+    },
+    "right_ventral_dc": {
+      "label": 60,
+      "mean_bias_pct": 1.5306267303826067,
+      "bias_pct_ci95": [
+        0.353399488442091,
+        2.925032119167498
+      ],
+      "dice_mean": 0.8824762234717256,
+      "n": 58
+    }
+  },
+  "definitions": "E2-FS: raw-scan segmentation agreement with each subject's own TransMorph FreeSurfer labels (Phase 3).\n\nUsed first on the 58 TransMorph Val subjects for the pre-registered fine-tuning rule,\nlater once on Test with the checkpoint that rule selects.\n\nLabel transfer (per subject, mapping data/transmorph_ixi_mapping.csv):\n  1. affine ANTs registration of the TransMorph image (FreeSurfer brainmask, talairach space) to our template-space\n     U-Net input of the SAME subject (work/pipeline_v2/<IXI>/template_t1.nii.gz; same grid);\n  2. the TransMorph FreeSurfer labels follow that affine and then our template -> native affine\n     (native2atlas_0GenericAffine.mat, inverted), nearest-label interpolation, onto the native grid of labels_native.\nMetrics (pre-specified in the decision rule): per subject, mean over the 29 foreground classes of the native-space\nDice (NaN when a class is absent from both); per structure, volume bias 100 x (ours - FS) / FS with our primary\n('jacobian') volume against the transferred FS volume (native voxel count x voxel volume). The post-registration\nNCC of step 1 is reported per subject as a transfer-quality check.\n\nOutput: results/e2_fs/<run>/{per_subject_structure.csv, per_subject.csv, metrics.json}; --limit runs go to work/smoke/.\nUsage: python experiments/e2fs_transferred_fs.py --split Val [--limit 3] [--out-name NAME] [--labels-dir work/pipeline_ft]\n",
+  "provenance": {
+    "pipeline_version": "2.0.0.dev1",
+    "git_commit": {
+      "sha": "edc51e11aa1904550ea81294adc54aeab38fe5e5",
+      "dirty": true
+    },
+    "timestamp_utc": "2026-10-22T20:28:21+00:00",
+    "command": "experiments\\e2fs_transferred_fs.py --split Val --out-name ft_val --labels-dir work\\pipeline_ft",
+    "software": {
+      "python": "3.12.6",
+      "platform": "Windows-11-10.0.26300-SP0",
+      "numpy": "2.3.5",
+      "scipy": "1.15.3",
+      "nibabel": "5.4.2",
+      "torch": "2.6.0+cu124",
+      "antspyx": "0.6.3",
+      "scikit-learn": "1.9.0",
+      "scikit-image": "0.26.0",
+      "pandas": "3.0.3",
+      "pingouin": "0.7.0"
+    },
+    "data_subset": "TransMorph Val, n=58"
+  }
+}
