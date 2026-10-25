@@ -88,6 +88,10 @@ The serialisation profiles (`full`, `compact`, `csv`, `text`, `obfuscated`) are 
 - The quality gate compares each scan with a single reference built from all three IXI sites, so most of its flags reflect scanner differences rather than poor images; per-site references are planned.
 - For research use only; not for diagnosis.
 
+## Licence
+
+The code is released under the MIT licence (see `LICENSE`). The model weights and the registration template attached to the release are derived from the IXI dataset and are shared under CC BY-SA 3.0, the licence of IXI.
+
 ## Citation
 
 Rishit V N S, P Manas Siddhardha, Rohith Karning, Kushal G and Mahitha G, "MRI to Structured JSON: A Quality-Gated Deep Learning Pipeline for Compact Brain Morphometry Records," in *Proc. OITS International Conference on Information Technology (OCIT)*, 2026.
