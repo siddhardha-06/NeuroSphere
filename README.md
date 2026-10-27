@@ -94,4 +94,4 @@ The code is released under the MIT licence (see `LICENSE`). The model weights an
 
 ## Citation
 
-Rishit V N S, P Manas Siddhardha, Rohith Karning, Kushal G and Mahitha G, "MRI to Structured JSON: A Quality-Gated Deep Learning Pipeline for Compact Brain Morphometry Records," in *Proc. OITS International Conference on Information Technology (OCIT)*, 2026.
+Mahitha G, P Manas Siddhardha, Rishit V N S, Rohith Karning and Kushal G, "MRI to Structured JSON: A Quality-Gated Deep Learning Pipeline for Compact Brain Morphometry Records," in *Proc. OITS International Conference on Information Technology (OCIT)*, 2026.
